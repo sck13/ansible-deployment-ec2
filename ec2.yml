@@ -78,3 +78,4 @@
           sudo systemctl enable docker
           docker run -d --name game -p 8080:80 alexwhen/docker-2048
       register: ec2
+      when: existing_instances.instances | length == 0
