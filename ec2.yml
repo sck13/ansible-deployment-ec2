@@ -45,8 +45,8 @@
             to_port: 8080
             cidr_ip: 0.0.0.0/0
           - proto: tcp
-            from_port: 3000
-            to_port: 3000
+            from_port: 5000
+            to_port: 5000
             cidr_ip: 0.0.0.0/0  
           - proto: tcp
             from_port: 80
@@ -76,5 +76,5 @@
           sudo apt install docker.io -y
           sudo systemctl start docker
           sudo systemctl enable docker
-          sudo docker run -d --name 2048 -p 3000:3000 sushantkapare1717/2048:latest
+          sudo docker run -d --name 2048 -p 5000:5000 sushantkapare1717/flaskapp:latest
       register: ec2
