@@ -1,7 +1,7 @@
 ---
 - name: Povising a new ec2 instance and sg
   hosts: localhost
-  connenction: local
+  connection: local
   gather_facts: False
   tags: provisioning
 
