@@ -76,5 +76,5 @@
           sudo apt install docker.io -y
           sudo systemctl start docker
           sudo systemctl enable docker
-          sudo docker run -d --name 2048 -p 5000:5000 sushantkapare1717/flaskapp:latest
+          docker run -d --name game -p 8080:80 alexwhen/docker-2048
       register: ec2
